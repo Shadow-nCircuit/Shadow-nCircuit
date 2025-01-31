@@ -1,14 +1,16 @@
-// This function will display the subscribe popup on page load
+// Show the modal after the page loads
 window.onload = function() {
-    setTimeout(function() {
-        document.getElementById("subscribe-popup").style.display = "block";
-    }, 1000); // Adjust the time (1000 ms = 1 second) as needed
-};
-
-// This function will close the popup when the close button is clicked
-function closePopup() {
-    document.getElementById("subscribe-popup").style.display = "none";
+    document.getElementById("subscribe-modal").style.display = "block";
 }
 
-// Optionally, you can set a background overlay to dim the content behind the popup
-// If you want a smooth transition when closing the popup, you can add transition styles in CSS.
+// Close the modal when the close button is clicked
+document.getElementById("close-btn").onclick = function() {
+    document.getElementById("subscribe-modal").style.display = "none";
+}
+
+// Close the modal if the user clicks outside of the modal
+window.onclick = function(event) {
+    if (event.target == document.getElementById("subscribe-modal")) {
+        document.getElementById("subscribe-modal").style.display = "none";
+    }
+}
