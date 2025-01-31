@@ -3,91 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shadow-nCircuit</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background: linear-gradient(to right, #0d0d0d, #1a1a2e);
-            color: #e0e0e0;
-            font-family: 'Orbitron', sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-        header {
-            background: rgba(10, 10, 10, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 20px cyan;
-        }
-        h1 {
-            font-family: 'UnifrakturMaguntia', cursive;
-            font-size: 3rem;
-            color: #ffcc00;
-            text-shadow: 3px 3px 10px rgba(255, 204, 0, 0.8);
-        }
-        section {
-            margin: 20px auto;
-            max-width: 800px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px magenta;
-        }
-        a {
-            color: #ff6600;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            color: cyan;
-            text-shadow: 0px 0px 10px cyan;
-        }
-        .neon-text {
-            color: #ff00ff;
-            text-shadow: 0px 0px 10px #ff00ff, 0px 0px 20px #ff00ff, 0px 0px 30px #ff00ff;
-        }
-        .glow-button {
-            background: linear-gradient(to right, #ff00ff, #ff6600);
-            border: none;
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-            box-shadow: 0px 0px 15px #ff6600;
-            transition: 0.3s;
-        }
-        .glow-button:hover {
-            box-shadow: 0px 0px 25px #ff00ff;
-            transform: scale(1.05);
-        }
-        footer {
-            margin-top: 30px;
-            padding: 10px;
-            background: rgba(26, 26, 26, 0.9);
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px cyan;
-        }
-    </style>
+    <meta name="description" content="Cyberpunk and Futuristic Design - Shadow & Circuit">
+    <title>Shadow & Circuit</title>
+    <!-- Link to your main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Mailchimp's CSS -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <!-- Your main content here -->
+    <div class="content">
+        <h1>Welcome to the Future</h1>
+        <p>Explore, create, and immerse yourself in the world of Shadow & Circuit.</p>
+    </div>
 
-    <header>
-        <h1>Shadow-nCircuit</h1>
-        <p class="neon-text">Where the Gothic Past Meets the Cyber Future</p>
-    </header>
+    <!-- Mailchimp Subscribe Popup -->
+    <div id="subscribe-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-btn" class="close-btn">&times;</span>
+            <h2>The Future Is Now - Don't Miss Out!</h2>
+            <form action="https://github.us22.list-manage.com/subscribe/post?u=e97e89aebc2a34ae71871e644&amp;id=7bf17d6dd6&amp;f_id=009cc2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                <div class="mc-field-group">
+                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required value="">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-FNAME">First Name</label>
+                    <input type="text" name="FNAME" class="text" id="mce-FNAME" value="">
+                </div>
+                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+            </form>
+        </div>
+    </div>
 
-    <section>
-        <p>Welcome to the fusion of <strong>retro-futurism</strong>, <strong>cyberpunk</strong>, and <strong>gothic mystery</strong>. Dive into the world where neon meets noir, where the echoes of the 50s resonate through a digital future.</p>
-        <button class="glow-button">Explore the Circuit</button>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Shadow-nCircuit. All rights reserved.</p>
-    </footer>
-
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
+
