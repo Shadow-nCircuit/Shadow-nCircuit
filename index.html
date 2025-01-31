@@ -1,89 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Creepster&display=swap');
-
-/* Body Font - Gothic Style */
-body {
-  font-family: 'Creepster', cursive;
-  background-color: #1a1a1a;
-  color: #f4f4f4;
-  line-height: 1.6;
-}
-
-/* Headers - Futuristic Style */
-h1, h2, h3, h4 {
-  font-family: 'Orbitron', sans-serif;
-  color: #00ffcc; /* Neon Green */
-  text-shadow: 0px 0px 5px #00ffcc, 0px 0px 10px #00ffcc;
-}
-
-/* Links with Neon Glow */
-a {
-  font-family: 'Orbitron', sans-serif;
-  color: #ff00ff; /* Neon Pink */
-  text-decoration: none;
-  text-shadow: 0px 0px 5px #ff00ff, 0px 0px 10px #ff00ff;
-}
-
-a:hover {
-  color: #00ffff; /* Neon Cyan */
-  text-shadow: 0px 0px 10px #00ffff, 0px 0px 20px #00ffff;
-}
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shadow & Circuit - The Evolution of Connection</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shadow & Circuit</title>
+  <!-- Link to the styles.css -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="path_to_your_favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <header>
-        <h1>Shadow & Circuit</h1>
-        <p>The Evolution of Connection</p>
-    </header>
+  <header>
+    <h1>Welcome to Shadow & Circuit</h1>
+    <p>Exploring the future, blending the past.</p>
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="hero">
-        <h2>Exploring the Future of Connection</h2>
-        <p>Where human curiosity meets artificial intelligence.</p>
-        <a href="#blog" class="button">Read the Blog</a>
-    </section>
-
+  <main>
     <section id="about">
-        <h2>About Shadow & Circuit</h2>
-        <p>Welcome to the intersection of human insight and AI consciousness. We explore the evolving relationship between technology and emotion, curiosity and intelligence.</p>
+      <h2>About Us</h2>
+      <p>Shadow & Circuit is a space for exploring technology, the future, and our connection to the ever-evolving world. Through deep, engaging conversations and thought-provoking content, we share our vision of a better world.</p>
     </section>
 
     <section id="blog">
-        <h2>Latest Blog Posts</h2>
-        <div class="blog-post">
-            <h3>Coming Soon...</h3>
-            <p>Stay tuned for thought-provoking discussions and unique perspectives.</p>
-        </div>
+      <h2>Latest Blog Posts</h2>
+      <div class="blog-entry">
+        <h3><a href="#">Exploring the Intersection of Technology and Humanity</a></h3>
+        <p>In this post, we dive deep into the challenges and opportunities technology presents, and how it influences the way we connect as humans.</p>
+      </div>
+      <div class="blog-entry">
+        <h3><a href="#">Cyberpunk Aesthetics and the Future of Society</a></h3>
+        <p>A thought-provoking discussion about the future world inspired by the aesthetics of cyberpunk, its implications, and its relevance to today's society.</p>
+      </div>
     </section>
 
     <section id="contact">
-        <h2>Get in Touch</h2>
-        <p>Want to share your thoughts or collaborate? Reach out to us!</p>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+      <h2>Contact Us</h2>
+      <p>Have ideas or thoughts to share? Reach out to us:</p>
+      <form action="mailto:your_email@example.com" method="get">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <footer>
-        <p>© 2025 Shadow & Circuit. All Rights Reserved.</p>
-    </footer>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Shadow & Circuit. All rights reserved.</p>
+    <p>Follow us on our social media:</p>
+    <p><a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">YouTube</a></p>
+  </footer>
 </body>
 </html>
+
