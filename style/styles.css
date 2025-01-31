@@ -1,40 +1,77 @@
-/* General Styles */
+/* General body styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000;
-    color: #0ff;
-    text-align: center;
-    padding: 50px;
+  background-color: #111; /* Dark background */
+  color: #fff; /* White text */
+  font-family: 'Press Start 2P', cursive; /* Retro, pixelated font */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: url('https://example.com/grunge-background.jpg'); /* Grunge texture (use your own image) */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
-/* Header Styling */
-h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-shadow: 0px 0px 10px cyan;
+/* Glowing text effect with cyberpunk aesthetic */
+.glowing-text {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3em;
+  color: #00ffff; /* Neon teal color */
+  text-align: center;
+  text-shadow: 
+    0 0 5px #00ffff, 
+    0 0 10px #00ffff, 
+    0 0 15px #00ffff, 
+    0 0 20px #ff00ff, 
+    0 0 30px #ff00ff, 
+    0 0 40px #ff00ff, 
+    0 0 50px #ff00ff; /* Neon effect with pink accents */
+  margin: 10px;
+  padding: 20px;
+  letter-spacing: 2px;
+  animation: pulse 2s infinite alternate; /* Glowing pulse animation */
 }
 
-/* Subscribe Popup */
-.popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #111;
-    padding: 20px;
-    box-shadow: 0px 0px 10px cyan;
-    color: white;
+/* Keyframes for pulsing effect */
+@keyframes pulse {
+  0% {
+    text-shadow: 
+      0 0 5px #00ffff, 
+      0 0 10px #00ffff, 
+      0 0 15px #00ffff, 
+      0 0 20px #ff00ff, 
+      0 0 30px #ff00ff, 
+      0 0 40px #ff00ff, 
+      0 0 50px #ff00ff;
+  }
+  100% {
+    text-shadow: 
+      0 0 15px #00ffff, 
+      0 0 30px #00ffff, 
+      0 0 45px #00ffff, 
+      0 0 60px #ff00ff, 
+      0 0 75px #ff00ff, 
+      0 0 90px #ff00ff, 
+      0 0 105px #ff00ff;
+  }
 }
 
-.popup-content {
-    text-align: left;
+/* Adding a grunge border for a more intense look */
+.glowing-text::before {
+  content: "▌"; /* Added character to enhance the frame */
+  font-size: 2em;
+  color: #ff00ff;
+  margin-right: 5px;
 }
 
-button {
-    background: cyan;
-    color: black;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
+/* Adjusting the page background */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
 }
+
