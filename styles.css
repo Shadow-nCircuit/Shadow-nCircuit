@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #ddd;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #222, #444);
+    padding: 20px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #333;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#hero {
+    padding: 50px;
+    background: url('https://source.unsplash.com/1600x900/?technology,ai') center/cover;
+    color: white;
+}
+
+.button {
+    background: #008080;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.blog-post {
+    background: #222;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
+
+button {
+    background: #008080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+footer {
+    background: #222;
+    padding: 20px;
+    font-size: 0.9em;
+}
