@@ -6,5 +6,3 @@ We invite you to explore our blog posts, conversations, and ideas about how we a
 
 
 
-**Shadow-nCircuit/Shadow-nCircuit** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
