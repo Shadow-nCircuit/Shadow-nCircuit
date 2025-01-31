@@ -3,10 +3,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     const subscribeForm = document.getElementById("mc_embed_signup");
 
-    // Show the popup when the page loads
-    subscribeForm.style.display = "block";
+    // Show the popup after a delay of 3 seconds
+    setTimeout(() => {
+        subscribeForm.style.display = "block";
+    }, 3000); // 3 seconds delay before showing the subscribe form
 
-    // Hide the form after submission (optional behavior)
+    // Optionally hide the form after submission
     subscribeForm.addEventListener("submit", function () {
         subscribeForm.style.display = "none";
         alert("Thank you for subscribing!");
