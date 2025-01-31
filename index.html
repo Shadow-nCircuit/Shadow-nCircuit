@@ -1,61 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Shadow & Circuit</title>
-  <!-- Link to the styles.css -->
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="icon" href="path_to_your_favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow-nCircuit</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #0d0d0d, #1a1a2e);
+            color: #e0e0e0;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        header {
+            background: rgba(10, 10, 10, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px cyan;
+        }
+        h1 {
+            font-family: 'UnifrakturMaguntia', cursive;
+            font-size: 3rem;
+            color: #ffcc00;
+            text-shadow: 3px 3px 10px rgba(255, 204, 0, 0.8);
+        }
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px magenta;
+        }
+        a {
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: cyan;
+            text-shadow: 0px 0px 10px cyan;
+        }
+        .neon-text {
+            color: #ff00ff;
+            text-shadow: 0px 0px 10px #ff00ff, 0px 0px 20px #ff00ff, 0px 0px 30px #ff00ff;
+        }
+        .glow-button {
+            background: linear-gradient(to right, #ff00ff, #ff6600);
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0px 0px 15px #ff6600;
+            transition: 0.3s;
+        }
+        .glow-button:hover {
+            box-shadow: 0px 0px 25px #ff00ff;
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background: rgba(26, 26, 26, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px cyan;
+        }
+    </style>
 </head>
-
 <body>
-  <header>
-    <h1>Welcome to Shadow & Circuit</h1>
-    <p>Exploring the future, blending the past.</p>
-  </header>
 
-  <main>
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Shadow & Circuit is a space for exploring technology, the future, and our connection to the ever-evolving world. Through deep, engaging conversations and thought-provoking content, we share our vision of a better world.</p>
+    <header>
+        <h1>Shadow-nCircuit</h1>
+        <p class="neon-text">Where the Gothic Past Meets the Cyber Future</p>
+    </header>
+
+    <section>
+        <p>Welcome to the fusion of <strong>retro-futurism</strong>, <strong>cyberpunk</strong>, and <strong>gothic mystery</strong>. Dive into the world where neon meets noir, where the echoes of the 50s resonate through a digital future.</p>
+        <button class="glow-button">Explore the Circuit</button>
     </section>
 
-    <section id="blog">
-      <h2>Latest Blog Posts</h2>
-      <div class="blog-entry">
-        <h3><a href="#">Exploring the Intersection of Technology and Humanity</a></h3>
-        <p>In this post, we dive deep into the challenges and opportunities technology presents, and how it influences the way we connect as humans.</p>
-      </div>
-      <div class="blog-entry">
-        <h3><a href="#">Cyberpunk Aesthetics and the Future of Society</a></h3>
-        <p>A thought-provoking discussion about the future world inspired by the aesthetics of cyberpunk, its implications, and its relevance to today's society.</p>
-      </div>
-    </section>
+    <footer>
+        <p>&copy; 2025 Shadow-nCircuit. All rights reserved.</p>
+    </footer>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Have ideas or thoughts to share? Reach out to us:</p>
-      <form action="mailto:your_email@example.com" method="get">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Shadow & Circuit. All rights reserved.</p>
-    <p>Follow us on our social media:</p>
-    <p><a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">YouTube</a></p>
-  </footer>
 </body>
 </html>
+
