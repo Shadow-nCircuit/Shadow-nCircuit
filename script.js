@@ -1,16 +1,14 @@
-// Show the modal after the page loads
-window.onload = function() {
-    document.getElementById("subscribe-modal").style.display = "block";
-}
+// JavaScript to handle the popup subscribe form behavior
 
-// Close the modal when the close button is clicked
-document.getElementById("close-btn").onclick = function() {
-    document.getElementById("subscribe-modal").style.display = "none";
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const subscribeForm = document.getElementById("mc_embed_signup");
 
-// Close the modal if the user clicks outside of the modal
-window.onclick = function(event) {
-    if (event.target == document.getElementById("subscribe-modal")) {
-        document.getElementById("subscribe-modal").style.display = "none";
-    }
-}
+    // Show the popup when the page loads
+    subscribeForm.style.display = "block";
+
+    // Hide the form after submission (optional behavior)
+    subscribeForm.addEventListener("submit", function () {
+        subscribeForm.style.display = "none";
+        alert("Thank you for subscribing!");
+    });
+});
