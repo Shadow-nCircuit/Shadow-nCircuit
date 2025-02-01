@@ -1,1 +1,103 @@
+/* Reset and Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background: linear-gradient(45deg, #222, #111);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+h1 {
+    font-size: 3em;
+    color: #00ffee;
+}
+.subtitle {
+    font-size: 1.2em;
+    color: #bbb;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #00ffee;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px 20px;
+    background: radial-gradient(circle, #333, #000);
+    margin: 20px;
+    border-radius: 10px;
+}
+.hero h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+}
+.hero .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00ffee;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Sections */
+.about, .blog, .contact {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #111;
+    border-radius: 10px;
+}
+h2 {
+    color: #00ffee;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, textarea {
+    padding: 10px;
+    background: #222;
+    border: 1px solid #00ffee;
+    color: white;
+    border-radius: 5px;
+}
+button {
+    background: #00ffee;
+    color: #111;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #111;
+}
 
