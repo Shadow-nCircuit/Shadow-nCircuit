@@ -18,6 +18,23 @@ h1 {
     font-size: 6em;
     color: #00ffee;
     font-family: 'Cinzel', serif; /* Changed Gothic font to Cinzel for readability */
+text-shadow: 
+        0 0 5px #00ffee,    /* First glow layer */
+        0 0 10px #00ffee,   /* Second glow layer */
+        0 0 15px #ffcc00,   /* Fluorescent yellow glow */
+        0 0 20px #ffcc00,   /* Extended yellow glow */
+        0 0 25px #ffcc00,   /* Strong yellow glow */
+        0 0 30px #ffcc00;   /* Bright yellow glow */
+    transition: text-shadow 0.3s ease-in-out;
+}
+h1:hover {
+    text-shadow: 
+        0 0 10px #00ffee, 
+        0 0 20px #00ffee, 
+        0 0 30px #ffcc00, 
+        0 0 40px #ffcc00, 
+        0 0 50px #ffcc00, 
+        0 0 60px #ffcc00;
 }
 .subtitle {
     font-size: 1.2em;
