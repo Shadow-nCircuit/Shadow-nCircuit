@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Almendra Display', cursive;
+    font-family: 'Lora', serif; /* Elegant and legible for blog posts */
     background-color: #0a0a0a;
     color: #ffffff;
     text-align: center;
@@ -17,8 +17,7 @@ header {
 h1 {
     font-size: 6em;
     color: #00ffee;
-    font-family: 'Almendra Display', cursive;
-    text-shadow: 0 0 15px #00ffee, 0 0 30px #00ffee;
+    font-family: 'UnifrakturMaguntia', cursive; /* Gothic cyberpunk title font */
 }
 .subtitle {
     font-size: 1.2em;
@@ -41,7 +40,7 @@ nav ul li a {
     transition: color 0.3s ease-in-out;
 }
 nav ul li a:hover {
-    color: #ff00ff;
+    color: #ffcc00; /* Warm orange glow effect */
 }
 
 /* Hero Section */
@@ -54,7 +53,6 @@ nav ul li a:hover {
 .hero h2 {
     font-size: 2.5em;
     color: #ffffff;
-    text-shadow: 0 0 10px #00ffee;
 }
 .hero .button {
     display: inline-block;
@@ -68,31 +66,55 @@ nav ul li a:hover {
     transition: background 0.3s ease-in-out;
 }
 .hero .button:hover {
-    background: #ff00ff;
+    background: linear-gradient(45deg, #ffcc00, #ff9900); /* Warm glow effect */
 }
 
-/* Blog Content */
+/* Blog Section */
 main {
-    max-width: 900px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 article {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 30px;
+    max-width: 800px;
+    background: #111;
+    padding: 20px;
     border-radius: 10px;
-    text-align: justify;
-    line-height: 1.8;
+    text-align: left;
+}
+article h2 {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 2em;
+    text-align: center;
+    color: #00ffee;
+}
+article p {
+    font-family: 'Lora', serif;
     font-size: 1.2em;
-    border: 1px solid #00ffee;
-    box-shadow: 0 0 10px #00ffee, 0 0 20px rgba(0, 255, 238, 0.5);
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+article a {
+    color: #00ffee;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+article a:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 8px #ffcc00;
+}
+
+/* Sections */
+.about, .blog, .contact {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #111;
+    border-radius: 10px;
 }
 h2 {
     color: #00ffee;
-    text-shadow: 0 0 10px #00ffee;
-}
-p {
-    margin-bottom: 20px;
 }
 
 /* Contact Form */
@@ -118,7 +140,7 @@ button {
     transition: background 0.3s ease-in-out;
 }
 button:hover {
-    background: #ff00ff;
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
 }
 
 /* Footer */
@@ -126,7 +148,4 @@ footer {
     margin-top: 50px;
     padding: 20px;
     background: #111;
-    color: #00ffee;
-    text-shadow: 0 0 10px #00ffee;
 }
-
