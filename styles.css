@@ -8,16 +8,11 @@ body {
     color: #ffffff;
     text-align: center;
 }
-/* Header Styles */
+/* Header */
 header {
-    padding: 10px;
-    background-image: url('images/background.jpg'); /* Path to your background image */
-    background-size: cover;  /* Ensures the image covers the entire header */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed; /* Keeps the background fixed while scrolling */
-    background-repeat: no-repeat; /* Prevents tiling */
-    color: #ffffff; /* Text color */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
+    padding: 20px;
+    background: linear-gradient(45deg, #222, #111);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 h1 {
     font-size: 4em;
