@@ -67,10 +67,10 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    padding: 50px 20px;
+    padding: 100px 20px;
     background: radial-gradient(circle, #333, #000);
     margin: 20px;
-    border-radius: 10px;
+    border-radius:20px;
 }
 .hero h2 {
     font-size: 2.5em;
