@@ -67,9 +67,9 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    padding: 10px 20px;
+    padding: 5px 20px;
     background: radial-gradient(circle, #333, #000);
-    margin: 20px;
+    margin: 10px;
     border-radius:20px;
 }
 .hero h2 {
