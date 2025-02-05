@@ -62,7 +62,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    padding: 20px 20px;
+    padding: 50px 20px;
     background: url('images/background.jpg') no-repeat center center/cover;
     margin: 10px;
     border-radius: 20px;
